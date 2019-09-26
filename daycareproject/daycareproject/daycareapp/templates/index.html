@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Daycare educators</h2>
+    <ul>
+        {% for educator in my_favorite_educators %}
+            <li>{{ educator.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
